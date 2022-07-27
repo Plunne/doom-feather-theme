@@ -1,9 +1,9 @@
-;;; doom-plunne-light-theme.el --- Based on Doom One Light -*- lexical-binding: t; no-byte-compile: t; -*-
+;;; doom-feather-light-theme.el --- Based on Doom One Light -*- lexical-binding: t; no-byte-compile: t; -*-
 ;;
 ;; Date: July 24, 2022
 ;; Author: Lena SAVY-LARIGALDIE <https://github.com/Plunne> mainly on Gitlab
 ;; Original: Henrik Lissner <https://github.com/hlissner>
-;; Source: https://github.com/Plunne/doom-plunne-themes
+;; Source: https://github.com/Plunne/doom-feather-themes
 ;;
 ;;; Code:
 
@@ -12,31 +12,31 @@
 ;;
 ;;; Variables
 
-(defgroup doom-plunne-light-theme nil
-  "Options for the `doom-plunne-light' theme."
+(defgroup doom-feather-light-theme nil
+  "Options for the `doom-feather-light' theme."
   :group 'doom-themes)
 
-(defcustom doom-plunne-light-brighter-modeline nil
+(defcustom doom-feather-light-brighter-modeline nil
   "If non-nil, more vivid colors will be used to style the mode-line."
-  :group 'doom-plunne-light-theme
+  :group 'doom-feather-light-theme
   :type 'boolean)
 
-(defcustom doom-plunne-light-brighter-comments nil
+(defcustom doom-feather-light-brighter-comments nil
   "If non-nil, comments will be highlighted in more vivid colors."
-  :group 'doom-plunne-light-theme
+  :group 'doom-feather-light-theme
   :type 'boolean)
 
-(defcustom doom-plunne-light-padded-modeline doom-themes-padded-modeline
+(defcustom doom-feather-light-padded-modeline doom-themes-padded-modeline
   "If non-nil, adds a 4px padding to the mode-line.
 Can be an integer to determine the exact padding."
-  :group 'doom-plunne-light-theme
+  :group 'doom-feather-light-theme
   :type '(choice integer boolean))
 
 
 ;;
 ;;; Theme definition
 
-(def-doom-theme doom-plunne-light
+(def-doom-theme doom-feather-light
   "A light theme based on Doom One Light."
 
   ;; name        default   256       16
@@ -83,7 +83,7 @@ Can be an integer to determine the exact padding."
    (vertical-bar   (doom-darken base2 0.1))
    (selection      dark-blue)
    (builtin        blue)
-   (comments       (if doom-plunne-light-brighter-comments cyan base4))
+   (comments       (if doom-feather-light-brighter-comments cyan base4))
    (doc-comments   (doom-darken comments 0.15))
    (constants      teal)
    (functions      blue)
@@ -107,24 +107,24 @@ Can be an integer to determine the exact padding."
    (modeline-fg              fg)
    (modeline-fg-alt          (doom-blend
                               violet base4
-                              (if doom-plunne-light-brighter-modeline 0.5 0.2)))
-   (modeline-bg              (if doom-plunne-light-brighter-modeline
+                              (if doom-feather-light-brighter-modeline 0.5 0.2)))
+   (modeline-bg              (if doom-feather-light-brighter-modeline
                                  (doom-darken base2 0.05)
                                base1))
-   (modeline-bg-alt          (if doom-plunne-light-brighter-modeline
+   (modeline-bg-alt          (if doom-feather-light-brighter-modeline
                                  (doom-darken base2 0.1)
                                base2))
    (modeline-bg-inactive     (doom-darken bg 0.1))
    (modeline-bg-alt-inactive `(,(doom-darken (car bg-alt) 0.05) ,@(cdr base1)))
 
    (-modeline-pad
-    (when doom-plunne-light-padded-modeline
-      (if (integerp doom-plunne-light-padded-modeline) doom-plunne-light-padded-modeline 4))))
+    (when doom-feather-light-padded-modeline
+      (if (integerp doom-feather-light-padded-modeline) doom-feather-light-padded-modeline 4))))
 
   ;;;; Base theme face overrides
    (((line-number &override) :foreground (doom-lighten base4 0.15))
    ((line-number-current-line &override) :background bg :foreground base5)
-   ((font-lock-comment-face &override) :background (if doom-plunne-light-brighter-comments base0) :italic t)
+   ((font-lock-comment-face &override) :background (if doom-feather-light-brighter-comments base0) :italic t)
    ((font-lock-doc-face &override) :slant 'italic)
    (mode-line
     :background modeline-bg :foreground modeline-fg
@@ -133,7 +133,7 @@ Can be an integer to determine the exact padding."
     :background modeline-bg-inactive :foreground modeline-fg-alt
     :box (if -modeline-pad `(:line-width ,-modeline-pad :color ,modeline-bg-inactive)))
    (mode-line-emphasis
-    :foreground (if doom-plunne-light-brighter-modeline base8 highlight))
+    :foreground (if doom-feather-light-brighter-modeline base8 highlight))
    (shadow :foreground base4)
    (tooltip :background base1 :foreground fg)
    ;;;; button (#include "strings")
@@ -145,7 +145,7 @@ Can be an integer to determine the exact padding."
    (css-property             :foreground green)
    (css-selector             :foreground blue)
    ;;;; doom-modeline
-   (doom-modeline-bar :background (if doom-plunne-light-brighter-modeline modeline-bg highlight))
+   (doom-modeline-bar :background (if doom-feather-light-brighter-modeline modeline-bg highlight))
    ;;;; ediff <built-in>
    (ediff-current-diff-A        :foreground red   :background (doom-lighten red 0.8))
    (ediff-current-diff-B        :foreground green :background (doom-lighten green 0.8))
@@ -228,4 +228,4 @@ Can be an integer to determine the exact padding."
   ()
   )
 
-;;; doom-plunne-light-theme.el ends here
+;;; doom-feather-light-theme.el ends here

@@ -1,4 +1,4 @@
-#+TITLE: doom-plunne-themes
+#+TITLE: doom-feather-theme
 #+AUTHOR: Lena SAVY
 
 Themes based on doom-one-themes from *@hlissner*.
