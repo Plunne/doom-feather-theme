@@ -1,0 +1,15 @@
+#+TITLE: doom-plunne-themes
+#+AUTHOR: Lena SAVY
+
+Themes based on doom-one-themes from *@hlissner*.
+
+** Styles
+
+Available in Dark and Light.
+
+- [X] Dark scheme
+- [X] Light scheme
+
+* CREDITS
+
+- *doom-themes* : https://github.com/doomemacs/themes
