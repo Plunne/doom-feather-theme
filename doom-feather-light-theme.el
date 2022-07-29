@@ -144,6 +144,8 @@ Can be an integer to determine the exact padding."
    (css-proprietary-property :foreground orange)
    (css-property             :foreground green)
    (css-selector             :foreground blue)
+   ;;;; dashboard
+   (dashboard-navigator :foreground magenta)
    ;;;; doom-modeline
    (doom-modeline-bar :background (if doom-feather-light-brighter-modeline modeline-bg highlight))
    ;;;; ediff <built-in>

@@ -138,6 +138,8 @@ Can be an integer to determine the exact padding."
    (css-proprietary-property :foreground orange)
    (css-property             :foreground green)
    (css-selector             :foreground blue)
+   ;;;; dashboard
+   (dashboard-navigator :foreground teal)
    ;;;; doom-modeline
    (doom-modeline-bar :background (if doom-feather-brighter-modeline modeline-bg highlight))
    (doom-modeline-buffer-file :inherit 'mode-line-buffer-id :weight 'bold)
