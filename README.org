@@ -3,12 +3,49 @@
 
 Themes based on doom-one-themes from *@hlissner*.
 
-** Styles
+* Styles
 
 Available in Dark and Light.
 
 - [X] Dark scheme
 - [X] Light scheme
+
+* TABLE OF CONTENT :toc:
+- [[#styles][Styles]]
+- [[#dashboard--minibuffer][DASHBOARD & MINIBUFFER]]
+  - [[#dark][Dark]]
+  - [[#light][Light]]
+- [[#org-mode--treemacs][ORG-MODE & TREEMACS]]
+  - [[#dark-1][Dark]]
+  - [[#light-1][Light]]
+- [[#prog-mode--treesitter--dap][PROG-MODE + TREESITTER + DAP]]
+  - [[#dark-2][Dark]]
+  - [[#light-2][Light]]
+- [[#credits][CREDITS]]
+
+* DASHBOARD & MINIBUFFER
+
+** Dark
+[[https://github.com/Plunne/Plunnemacs/blob/screenshots/dashboard_minibuffer_dark.png]]
+
+** Light
+[[https://github.com/Plunne/Plunnemacs/blob/screenshots/dashboard_minibuffer_light.png]]
+
+* ORG-MODE & TREEMACS
+
+** Dark
+[[https://raw.githubusercontent.com/Plunne/Plunnemacs/screenshots/orgmode_treemacs_dark.png]]
+
+** Light
+[[https://raw.githubusercontent.com/Plunne/Plunnemacs/screenshots/orgmode_treemacs_light.png]]
+
+* PROG-MODE + TREESITTER + DAP
+
+** Dark
+[[https://raw.githubusercontent.com/Plunne/Plunnemacs/screenshots/progmode_c_dap_treesitter_dark.png]]
+
+** Light
+[[https://raw.githubusercontent.com/Plunne/Plunnemacs/screenshots/progmode_c_dap_treesitter_light.png]]
 
 * CREDITS
 
